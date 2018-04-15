@@ -32,7 +32,7 @@ bar.text.style.fontFamily = 'Helvetica';
 bar.text.style.fontSize = '50px';
 
 bar.animate(1.0, {
-    duration: 30000,
+    duration: 10000,
     easing: 'linear'
 }, function() {
     console.log('Animation has finished');
