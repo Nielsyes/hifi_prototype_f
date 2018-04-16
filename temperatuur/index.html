@@ -4,7 +4,6 @@
   <meta charset="utf-8" />
   <link rel="stylesheet" type="text/css" href="css/temperatuur.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--<script src="js/javascript.js"></script>-->
 </head>
 <body>
   <img src="img/tesla_bar_cut.png" />
@@ -28,12 +27,65 @@
           </ul>
         </nav>
       </section>
-      <div id="options">
-        <h2>Verwarming</h2>
-        
-      </div>
+      <section id="options">
+        <div id="options-content">
+          <div id="verwarming">
+            <h2>Verwarming</h2>
+            <label class="switch">
+                <input id="slidercheck_verwarming" type="checkbox">
+                <span id="slider-text_verwarming">Aan</span>
+                <span class="slider round">
+                  <span id="slider-text-second_verwarming">Uit</span>
+                </span>
+            </label>
+          </div>
+          <div id="voorin_achterin">
+            <section id="voorin">
+              <h2>Voorin</h2>
+              <a id="top_arrow_voorin">
+                <img src="img/arrow_up.svg" />
+              </a>
+              <div class="tempdiv">
+                <span id="temp_voorin">21</span>
+                <span class="celcius_text">C</span>
+              </div>
+              <a id="bottom_arrow_voorin">
+                <img src="img/arrow_down.svg" />
+              </a>
+            </section>
+            <section id="achterin">
+              <h2>Achterin</h2>
+              <a id="top_arrow_achterin">
+                <img src="img/arrow_up.svg" />
+              </a>
+              <div class="tempdiv">
+                <span id="temp_achterin">21</span>
+                <span class="celcius_text">C</span>
+              </div>
+              <a id="bottom_arrow_achterin">
+                <img src="img/arrow_down.svg" />
+              </a>
+            </section>
+          </div>
+          <div id="airconditioning">
+            <h2>Airconditioning</h2>
+            <label class="switch">
+                <input id="slidercheck_aircon" type="checkbox">
+                <span id="slider-text_aircon">Aan</span>
+                <span class="slider round">
+                  <span id="slider-text-second_aircon">Uit</span>
+                </span>
+            </label>
+          </div>
+          <div id="sterkte">
+            <h2>Sterkte</h2>
+            <input type="range" name="points" min="0" max="10">
+          </div>
+        </div>
+      </section>
       </div>
     </div>
   </section>
 </body>
 </html>
+<script src="js/elements.js"></script>
