@@ -14,8 +14,9 @@ ul li:first-child{
 }
 
 ul {
+	width: 350px;
 	text-align: right;
-	margin-right: 1000px;
+	margin-right: 1070px;
 	margin-top: -1500px;
 }
 
@@ -51,8 +52,8 @@ hr {
 	border-color: #cfd0cf;
 	border-radius: 30px 30px 30px 30px;
 	border-style: solid;
-	width: 1050px;
+	width: 1030px;
 	height: 1450px;
-	margin-left: 300px;
+	margin-left: 315px;
 	margin-bottom: 80px;
 }
