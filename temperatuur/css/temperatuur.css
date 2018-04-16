@@ -1,5 +1,6 @@
 body {
   background-color: #272828;
+    /*margin enzo er nog uit halen*/
 }
 
 section#pop-up {
@@ -28,8 +29,8 @@ div#main-part {
   background-color: #ffffff;
   border-radius:  0px 0px 30px 30px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
@@ -37,6 +38,10 @@ h1 {
   padding: 0;
   margin: 0;
   font-size: 48px;
+}
+
+h2 {
+  font-size: 41px;
 }
 
 p {
@@ -69,3 +74,48 @@ img[src="img/cross.svg"] {
   position: absolute;
   right: 1420px;
 }
+
+/*NAV*/
+
+ul {
+  list-style: none;
+  margin-right: 50px;
+}
+
+li {
+  font-size: 41px;
+  color: #94979b;
+  text-align: right;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+li:not(:last-child)::after {
+  position: absolute;
+  top: 100;
+  left: 92;
+  content: "";
+  height: 2px;
+  background-color: #cfd1d0;
+  width: 168px;
+}
+
+section#nav_section {
+  height: 1401px;
+}
+
+/*NAV*/
+
+/*OPTIONS*/
+
+div#options {
+  width: 1042px;
+  height: 1401px;
+  background-color: #f8f7f7;
+  border-radius: 30px;
+  border-color: #cfd1d0;
+  border-style: solid;
+  border-width: 1.5px;
+}
+
+/*OPTIONS*/
