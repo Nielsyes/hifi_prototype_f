@@ -22,7 +22,7 @@
             <li>Geluid</li>
             <span></span>
             <li>Geur</li>
-            <li>Temperatuur</li>
+            <li id="current_li">Temperatuur</li>
             <li>Zitplaats</li>
           </ul>
         </nav>
@@ -79,7 +79,8 @@
           </div>
           <div id="sterkte">
             <h2>Sterkte</h2>
-            <input type="range" name="points" min="0" max="10">
+            <input id="range_slider" type="range" name="points" min="0" max="8" value="4">
+            <span id="slider_value">4</span>
           </div>
         </div>
       </section>

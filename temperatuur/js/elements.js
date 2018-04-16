@@ -79,3 +79,14 @@ function changeTempAchterin(){
   }
 }
 changeTempAchterin();
+
+/*----------------------------------------------------------------------------------------*/
+
+function getSliderValue(){
+  var sliderValue = document.getElementById('range_slider').value;
+  document.getElementById('slider_value').innerHTML = sliderValue;
+}
+
+document.getElementById("range_slider").oninput = function() {
+    getSliderValue()
+};
