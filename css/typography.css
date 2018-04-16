@@ -4,7 +4,7 @@ h1 {
 	font-size: 48px;
 }
 
-h2, p {
+h2, p{
 	color: #424241;
 	padding: 0;
 	margin: 0;
@@ -14,7 +14,10 @@ h2, p {
 	font-weight: 100;
 }
 
-h2 {
+h2, figcaption {
 	text-transform: uppercase;
+}
+
+h2{
 	padding-left: 70px;
 }
