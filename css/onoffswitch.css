@@ -1,4 +1,6 @@
 .onoffswitch {
+    margin-top: 40px;
+    margin-left: 70px;
     position: relative;
     width: 300px;
     -webkit-user-select: none;
