@@ -1,85 +1,86 @@
-input[type=range].slider {
+input[type=range] {
   -webkit-appearance: none;
-  width: 100%;
-  margin: 17.5px 0;
+  width: 800px;
+  margin-top: 50px;
+  margin-left: 70px;
 }
-input[type=range].slider:focus {
+input[type=range]:focus {
   outline: none;
 }
-input[type=range].slider::-webkit-slider-runnable-track {
+input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
-  height: 5px;
+  height: 14px;
   cursor: pointer;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
   background: #cfd0cf;
   border-radius: 0px;
-  border: 0px solid rgba(1, 1, 1, 0);
+  border: 0px solid rgba(207, 208, 207, 0);
 }
-input[type=range].slider::-webkit-slider-thumb {
+input[type=range]::-webkit-slider-thumb {
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
   border: 1px solid rgba(0, 0, 0, 0);
-  height: 40px;
-  width: 10px;
-  border-radius: 2px;
+  height: 70px;
+  width: 20px;
+  border-radius: 3px;
   background: #2f93d1;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -17.5px;
+  margin-top: -28px;
 }
-input[type=range].slider:focus::-webkit-slider-runnable-track {
-  background: #d4d5d4;
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #d2d3d2;
 }
-input[type=range].slider::-moz-range-track {
+input[type=range]::-moz-range-track {
   width: 100%;
-  height: 5px;
+  height: 14px;
   cursor: pointer;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
   background: #cfd0cf;
   border-radius: 0px;
-  border: 0px solid rgba(1, 1, 1, 0);
+  border: 0px solid rgba(207, 208, 207, 0);
 }
-input[type=range].slider::-moz-range-thumb {
+input[type=range]::-moz-range-thumb {
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
   border: 1px solid rgba(0, 0, 0, 0);
-  height: 40px;
-  width: 10px;
-  border-radius: 2px;
+  height: 70px;
+  width: 20px;
+  border-radius: 3px;
   background: #2f93d1;
   cursor: pointer;
 }
-input[type=range].slider::-ms-track {
+input[type=range]::-ms-track {
   width: 100%;
-  height: 5px;
+  height: 14px;
   cursor: pointer;
   background: transparent;
   border-color: transparent;
   color: transparent;
 }
-input[type=range].slider::-ms-fill-lower {
-  background: #cacbca;
-  border: 0px solid rgba(1, 1, 1, 0);
+input[type=range]::-ms-fill-lower {
+  background: #cccdcc;
+  border: 0px solid rgba(207, 208, 207, 0);
   border-radius: 0px;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
 }
-input[type=range].slider::-ms-fill-upper {
+input[type=range]::-ms-fill-upper {
   background: #cfd0cf;
-  border: 0px solid rgba(1, 1, 1, 0);
+  border: 0px solid rgba(207, 208, 207, 0);
   border-radius: 0px;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
 }
-input[type=range].slider::-ms-thumb {
+input[type=range]::-ms-thumb {
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
   border: 1px solid rgba(0, 0, 0, 0);
-  height: 40px;
-  width: 10px;
-  border-radius: 2px;
+  height: 70px;
+  width: 20px;
+  border-radius: 3px;
   background: #2f93d1;
   cursor: pointer;
-  height: 5px;
+  height: 14px;
 }
-input[type=range].slider:focus::-ms-fill-lower {
+input[type=range]:focus::-ms-fill-lower {
   background: #cfd0cf;
 }
-input[type=range].slider:focus::-ms-fill-upper {
-  background: #d4d5d4;
+input[type=range]:focus::-ms-fill-upper {
+  background: #d2d3d2;
 }
