@@ -1,0 +1,13 @@
+.selectBox {
+	height: 100px;
+	width: 100px;
+	border-radius: 10px;
+}
+
+.selectBox.active {
+	border: 2px solid #2f93d1;
+}
+
+.selectBox, .1 {
+	
+}
