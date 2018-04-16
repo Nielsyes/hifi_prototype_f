@@ -34,25 +34,51 @@
 					</ul>
                 </nav>
                 <div class="container">
-					<h2>Geluid</h2>
-					<div class="onoffswitch">
-						<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-						<label class="onoffswitch-label" for="myonoffswitch">
-							<span class="onoffswitch-inner"></span>
-							<span class="onoffswitch-switch"></span>
-						</label>
-					</div>	
-					<h2>volume</h2>
-					<input type="range" min="1" max="100" value="72" class="slider">
-                    <h2>Toon</h2>
-                    <h3>Bass</h3>
-                    <input class="bass" type="range" min="1" max="100" value="72" class="slider">
-                    <h3>Mid</h3>
-                    <input class="mid" type="range" min="1" max="100" value="72" class="slider">
-                    <h3>Treble</h3>
-                    <input class="treble" type="range" min="1" max="100" value="72" class="slider">
-                    <h2>Toon</h2>
-                    <input type="range" min="1" max="100" value="72" class="slider">
+                    <fieldset>
+                        <label for="sound">Geluid</label>
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="sound" checked>
+                            <label class="onoffswitch-label" for="sound">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>	
+                    </fieldset>
+                    
+                    <fieldset>
+                        <label for="volume">volume</label>
+                        <input id="range" type="range" min="1" max="100" value="72" class="slider">
+                    </fieldset>
+                    
+                    <fieldset class="vertical-range-section">
+                        <h3>Toon</h3>
+                    
+                        <div class="vertical-range-group">
+                            <label for="bass">Bass</label>
+                            <div class="vertical-range-input">
+                                <input id="bass" class="vertical-range slider" type="range" min="1" max="100" value="72" orient="vertical">
+                            </div>
+                        </div>
+                        
+                        <div class="vertical-range-group">
+                            <label for="mid">Mid</label>
+                            <div class="vertical-range-input">
+                                <input id="mid" class="vertical-range slider" type="range" min="1" max="100" value="72" orient="vertical">
+                            </div>
+                        </div>
+                        
+                        <div class="vertical-range-group">
+                            <label for="treble">Treble</label>
+                            <div class="vertical-range-input">
+                                <input id="treble" class="vertical-range slider" type="range" min="1" max="100" value="72" orient="vertical">
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <label for="frequency">Frequentie</label>
+                        <input id="frequency" type="range" min="1" max="100" value="72" class="slider">
+                    </fieldset>
 				</div>
             </div>
         </section>
