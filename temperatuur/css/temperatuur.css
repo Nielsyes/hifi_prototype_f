@@ -10,7 +10,7 @@ body {
 }
 
 section#pop-up {
-  -webkit-display: flex;
+  display: webkit-flex;
   -webkit-justify-content: center;
   -webkit-align-items: center;
 
@@ -33,7 +33,7 @@ div#top-bar {
   justify-content: center;
   align-items: center;
 
-  -webkit-display: flex;
+  display: webkit-flex;
   -webkit-justify-content: center;
   -webkit-align-items: center;
 }
@@ -48,7 +48,7 @@ div#main-part {
   justify-content: center;
   align-items: center;
 
-  -webkit-display: flex;
+  display: webkit-flex;
   -webkit-flex-direction: row;
   -webkit-flex-justify-content: center;
   -webkit-flex-align-items: center;
@@ -168,7 +168,7 @@ div#voorin_achterin {
   display: flex;
   flex-direction: row;
 
-  -webkit-display: flex;
+  display: webkit-flex;
   -webkit-flex-direction: row;
 }
 
@@ -177,7 +177,7 @@ section#voorin, section#achterin {
   display: flex;
   flex-direction: column;
 
-  -webkit-display: flex;
+  display: webkit-flex;
   -webkit-flex-direction: column;
 }
 
@@ -266,7 +266,7 @@ div.tempdiv {
     justify-content: center;
     align-items: center;
 
-    -webkit-display: flex;
+    display: webkit-flex;
     -webkit-justify-content: center;
     -webkit-align-items: center;
   }
@@ -280,7 +280,7 @@ div.tempdiv {
     display: flex;
     justify-content: flex-end;
 
-    -webkit-display: flex;
+    display: webkit-flex;
     -webkit-justify-content: flex-end;
   }
 
