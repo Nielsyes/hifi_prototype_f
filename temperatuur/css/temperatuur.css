@@ -225,6 +225,7 @@ a#top_arrow_voorin:active, a#top_arrow_achterin:active, a#bottom_arrow_voorin:ac
 div.tempdiv {
   padding-top: 15px;
   padding-bottom: 15px;
+  font-family: helvetica;
 }
 
 /*toggle*/
@@ -274,6 +275,7 @@ div.tempdiv {
     border-radius: 5px;
     font-size: 22px;
     color: white;
+    font-family: helvetica;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -285,6 +287,7 @@ div.tempdiv {
 
   #slider-text-second_verwarming, #slider-text-second_aircon {
     font-size: 22px;
+    font-family: helvetica;
     color: #94979b;
     height: 100%;
     align-items: center;
