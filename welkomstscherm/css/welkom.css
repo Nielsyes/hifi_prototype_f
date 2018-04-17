@@ -8,7 +8,7 @@ body {
 }
 
 section#pop-up {
-  display: webkit-flex;
+  display: -webkit-flex;
   -webkit-justify-content: center;
   -webkit-align-items: center;
 
@@ -31,7 +31,7 @@ div#top-bar {
   justify-content: center;
   align-items: center;
 
-  display: webkit-flex;
+  display: -webkit-flex;
   -webkit-justify-content: center;
   -webkit-align-items: center;
 }
@@ -46,7 +46,7 @@ div#main-part {
   justify-content: flex-end;
   align-items: center;
 
-  display: webkit-flex;
+  display: -webkit-flex;
   -webkit-flex-direction: column;
   -webkit-justify-content: flex-end;
   -webkit-align-items: center;
