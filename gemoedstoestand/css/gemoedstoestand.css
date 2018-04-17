@@ -123,8 +123,8 @@ figure img {
     flex-wrap: wrap;
     -webkit-flex-direction: row;
     flex-direction: row;
-    -webkit-justify-content: space-evenly;
-    justify-content: space-evenly;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
     width: 100%;
     margin-bottom: 60px;
   }
