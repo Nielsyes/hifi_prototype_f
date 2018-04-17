@@ -42,7 +42,7 @@
 						</label>
 					</div>	
 					<h2>Helderheid</h2>
-					<input type="range" min="1" max="100" value="72" class="slider" data-show-value="true">
+					<input type="range" id="myRange" min="1" max="100" value="72" class="range-slider__range"><span class="range-slider__value" id="myValue"></span>
 					<h2>Kleur</h2>
 					<div class="selectBox active" id="b1"></div>
 					<div class="selectBox" id="b2"></div>
@@ -68,5 +68,22 @@
 		crossorigin="anonymous">
 	</script>
 	<script type="text/javascript" src="classChange.js"></script>
+	<script type="text/javascript" >
+		var myRange = document.querySelector('#myRange');
+		var myValue = document.querySelector('#myValue');
+		var myUnits = 'myUnits';
+		var off = myRange.offsetWidth / (parseInt(myRange.max) - parseInt(myRange.min));
+		var px =  ((myRange.valueAsNumber - parseInt(myRange.min)) * off) - (myValue.offsetParent.offsetWidth / 2);
+
+		  myValue.parentElement.style.left = px + 'px';
+		  myValue.parentElement.style.top = myRange.offsetHeight + 'px';
+		  myValue.innerHTML = myRange.value;
+
+		  myRange.oninput =function(){
+		    let px = ((myRange.valueAsNumber - parseInt(myRange.min)) * off) - (myValue.offsetWidth / 2);
+		    myValue.innerHTML = myRange.value;
+		    myValue.parentElement.style.left = px + 'px';
+  };
+	</script>
 </body>
 </html>
