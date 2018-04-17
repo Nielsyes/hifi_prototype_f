@@ -82,6 +82,7 @@ img[src="img/wheel_image.jpg"] {
 }
 
 img[src="img/cross.svg"] {
+  margin-top: 20px;
   width: 17px;
   height: 17px;
   position: absolute;
@@ -89,6 +90,7 @@ img[src="img/cross.svg"] {
 }
 
 a#arrow {
+  margin-top: 20px;
   width: 30px;
   position: absolute;
   left: 710px
