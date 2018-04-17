@@ -1,8 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #272828;
 }
 
 section#pop-up {
+  -webkit-display: flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,35 +21,44 @@ section#pop-up {
 
 div#top-bar {
   background-color: #f8faf9;
-  width: 1473px;
-  height: 144px;
-  border-radius: 30px 30px 0px 0px;
+  width: 737px;
+  height: 72px;
+  border-radius: 15px 15px 0px 0px;
   border-style: solid;
-  border-width: 0px 0px 1.5px;
+  border-width: 0px 0px 1px;
+  border-color: #cfd1d0;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  -webkit-display: flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
 }
 
 div#main-part {
-  height: 1635px;
-  width: 1473px;
+  height: 818px;
+  width: 737px;
   background-color: #ffffff;
-  border-radius:  0px 0px 30px 30px;
+  border-radius:  0px 0px 15px 15px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+
+  -webkit-flex-direction: column;
+  -webkit-justify-content: flex-end;
+  -webkit-align-items: center;
 }
 
 div#text {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 h1 {
   padding: 0;
   margin: 0;
-  font-size: 48px;
+  font-size: 24px;
 }
 
 p {
@@ -48,23 +66,28 @@ p {
   padding: 0;
   margin: 0;
   margin-top: 60px;
-  font-size: 44px;
+  font-size: 22px;
   font-family: helvetica;
   font-weight: 100;
 }
 
 div#text {
-  width: 1173px;
+  width: 587px;
 }
 
 img[src="img/wheel_image.jpg"] {
-  width: 1473px;
-  height: 1050px;
+  width: 737px;
+  height: 450px;
 }
 
 img[src="img/cross.svg"] {
-  width: 33px;
-  height: 33px;
+  width: 17px;
+  height: 17px;
   position: absolute;
-  right: 1420px;
+  right: 710px;
+}
+
+img[src="img/tesla_bar_cut.png"] {
+  width: 768px;
+  height: 50px;
 }
