@@ -2,7 +2,7 @@
     margin:0;
     padding: 0;
   }
-  
+
   body {
     background-color: #272828;
   }
@@ -28,7 +28,7 @@
     -webkit-flex-wrap: wrap;
             flex-wrap: wrap;
   }
-  
+
   div#top-bar {
     background-color: #f8faf9;
     height: 70px;
@@ -48,6 +48,7 @@
   }
 
   #top-bar img {
+    margin-top: 20px;
     width: 20px;
     height: 20px;
     position: absolute;
@@ -59,7 +60,7 @@
     font-size: 27px;
     font-family: Helvetica, sans-serif;
   }
-  
+
   div#main-part {
     height: 818px;
     background-color: #ffffff;
@@ -128,7 +129,7 @@
     color: black;
   }
 
-hr { 
+hr {
     display: block;
     margin-left: auto;
     margin-right: 0;
@@ -136,11 +137,11 @@ hr {
     border-width: 1px;
     width: 120px;
     color: #cfd0cf;
-} 
+}
 
-h2, h3{ 
+h2, h3{
   font-family: Helvetica, sans-serif;
-  font-size: 22px; 
+  font-size: 22px;
   text-transform: uppercase;
   color: #94979B;
   font-weight: 100;
@@ -169,7 +170,7 @@ fieldset h3 {
 
 label:not(.onoffswitch-label) {
   font-family: Helvetica, sans-serif;
-  font-size: 22px; 
+  font-size: 22px;
   text-transform: uppercase;
   color: #94979B;
   font-weight: 100;
@@ -373,7 +374,7 @@ input[type=range]:focus::-ms-fill-upper {
 .bass, .mid, .treble {
   -webkit-transform:rotate(90deg);
   display: -webkit-flex;
-  display: flex; 
-  -webkit-justify-content: space-between; 
+  display: flex;
+  -webkit-justify-content: space-between;
           justify-content: space-between;
 }

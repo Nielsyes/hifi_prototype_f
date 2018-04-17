@@ -100,6 +100,7 @@ div#text {
 }
 
 img[src="img/cross.svg"] {
+  margin-top: 20px;
   width: 17px;
   height: 17px;
   position: absolute;
@@ -424,6 +425,7 @@ div.tempdiv {
     font-size: 21px;
     color: #94979b;
     margin-left: 30px;
+    font-family: helvetica;
   }
 
   /*slider*/
