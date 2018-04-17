@@ -1,0 +1,89 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/onoffswitch.css">
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
+	<link rel="stylesheet" type="text/css" href="css/popup.css">
+	<link rel="stylesheet" type="text/css" href="css/typography.css">
+	<link rel="stylesheet" type="text/css" href="css/navigatie.css">
+	<link rel="stylesheet" type="text/css" href="css/selectBox.css">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+</head>
+<body>
+	<img src="img/tesla_bar_cut.png" />
+	<section id="pop-up">
+		<div>
+			<div id="top-bar">
+				<img src="img/cross.svg" />
+				<h1>Hartslagmeter</h1>
+			</div>
+			<div id="main-part">
+				<nav>
+					<ul>
+						<li><a href="belichting.html" class="active">Belichting</a></li>
+						<hr>
+						<li><a href="">Geluid</a></li>
+						<hr>
+						<li><a href="geur.html">Geur</a></li>
+						<hr>
+						<li><a href="">Temperatuur</a></li>
+						<hr>
+						<li><a href="zitplaats.html">Zitplaats</a></li>
+					</ul>
+				</nav>
+				<div class="container">
+					<h2>Lichten</h2>
+					<div class="onoffswitch">
+						<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+						<label class="onoffswitch-label" for="myonoffswitch">
+							<span class="onoffswitch-inner"></span>
+							<span class="onoffswitch-switch"></span>
+						</label>
+					</div>	
+					<h2>Helderheid</h2>
+					<input type="range" id="myRange" min="1" max="100" value="72" class="range-slider__range"><span class="range-slider__value" id="myValue"></span>
+					<h2>Kleur</h2>
+					<div class="selectBox active" id="b1"></div>
+					<div class="selectBox" id="b2"></div>
+					<div class="selectBox" id="b3"></div>
+					<div class="selectBox" id="b4"></div>
+					<div class="selectBox" id="b5"></div>
+					<div class="selectBox" id="b6"></div>
+					<div class="selectBox" id="b7"></div>
+					<div class="selectBox" id="b8"></div>
+					<div class="selectBox" id="b9"></div>
+					<div class="selectBox" id="b10"></div>
+					<div class="selectBox" id="b11"></div>
+					<div class="selectBox" id="b12"></div>
+					<div class="selectBox" id="b13"></div>
+					<div class="selectBox" id="b14"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous">
+	</script>
+	<script type="text/javascript" src="js/classChange.js"></script>
+	<script type="text/javascript" >
+		var myRange = document.querySelector('#myRange');
+		var myValue = document.querySelector('#myValue');
+		var myUnits = 'myUnits';
+		var off = myRange.offsetWidth / (parseInt(myRange.max) - parseInt(myRange.min));
+		var px =  ((myRange.valueAsNumber - parseInt(myRange.min)) * off) - (myValue.offsetParent.offsetWidth / 2);
+
+		  myValue.parentElement.style.left = px + 'px';
+		  myValue.parentElement.style.top = myRange.offsetHeight + 'px';
+		  myValue.innerHTML = myRange.value;
+
+		  myRange.oninput =function(){
+		    let px = ((myRange.valueAsNumber - parseInt(myRange.min)) * off) - (myValue.offsetWidth / 2);
+		    myValue.innerHTML = myRange.value;
+		    myValue.parentElement.style.left = px + 'px';
+  };
+	</script>
+</body>
+</html>
