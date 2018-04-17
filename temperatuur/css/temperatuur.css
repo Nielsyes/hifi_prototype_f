@@ -58,6 +58,7 @@ h1 {
   padding: 0;
   margin: 0;
   font-size: 24px;
+  font-family: helvetica;
 }
 
 h2 {
@@ -66,6 +67,8 @@ h2 {
   margin-bottom: 25px;
   margin-top: 25px;
   font-size: 21px;
+  font-family: helvetica;
+  color: #94979b;
 }
 
 section#voorin > h2, section#achterin > h2 {
@@ -113,6 +116,9 @@ img[src="img/tesla_bar_cut.png"] {
 ul {
   list-style: none;
   margin-right: 25px;
+  margin-top: 25px;
+  font-family: helvetica;
+  color: #94979b;
 }
 
 li {
