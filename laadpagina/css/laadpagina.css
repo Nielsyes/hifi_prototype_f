@@ -90,6 +90,12 @@ img[src="img/cross.svg"] {
   right: 710px;
 }
 
+a#arrow {
+  width: 30px;
+  position: absolute;
+  left: 710px
+}
+
 div#progress_circle {
   width: 250px;
 }

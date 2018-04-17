@@ -88,6 +88,12 @@ img[src="img/cross.svg"] {
   right: 710px;
 }
 
+a#arrow {
+  width: 30px;
+  position: absolute;
+  left: 710px
+}
+
 img[src="img/tesla_bar_cut.png"] {
   width: 768px;
   height: 50px;
