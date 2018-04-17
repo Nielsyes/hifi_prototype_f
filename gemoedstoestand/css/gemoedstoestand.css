@@ -66,7 +66,7 @@ figure img {
   }
   
   div#main-part {
-    height: auto;
+    height: 818px;
     background-color: #ffffff;
     border-radius:  0px 0px 12px 12px;
     display: -webkit-flex;
@@ -131,11 +131,10 @@ figure img {
   .button-wrap {
     -webkit-display: flex;
     display: flex;
-    -webkit-flex-basis: 33.33%;
-    -moz-flex-basis: 33.33%;
     -ms-flex-basis: 33.33%;
     -o-flex-basis: 33.33%;
-    flex-basis: 33.33%;
+    -webkit-flex-basis: 33.33%;
+            flex-basis: 33.33%;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-justify-content: center;
