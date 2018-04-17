@@ -1,9 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
 body {
   background-color: #272828;
     /*margin enzo er nog uit halen*/
 }
 
 section#pop-up {
+  -webkit-display: flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,46 +23,60 @@ section#pop-up {
 
 div#top-bar {
   background-color: #f8faf9;
-  width: 1473px;
-  height: 144px;
-  border-radius: 30px 30px 0px 0px;
+  width: 737px;
+  height: 72px;
+  border-radius: 15px 15px 0px 0px;
   border-style: solid;
-  border-width: 0px 0px 1.5px;
+  border-width: 0px 0px 1px;
+  border-color: #cfd1d0;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  -webkit-display: flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
 }
 
 div#main-part {
-  height: 1635px;
-  width: 1473px;
+  height: 818px;
+  width: 737px;
   background-color: #ffffff;
-  border-radius:  0px 0px 30px 30px;
+  border-radius:  0px 0px 15px 15px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+  -webkit-display: flex;
+  -webkit-flex-direction: row;
+  -webkit-flex-justify-content: center;
+  -webkit-flex-align-items: center;
 }
 
 h1 {
   padding: 0;
   margin: 0;
-  font-size: 48px;
+  font-size: 24px;
 }
 
 h2 {
   padding: 0;
   margin: 0;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  font-size: 41px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  font-size: 21px;
+}
+
+section#voorin > h2, section#achterin > h2 {
+  margin-top: 0;
 }
 
 p {
   color: #9e9e9e;
   padding: 0;
   margin: 0;
-  font-size: 38px;
+  font-size: 19px;
   font-family: helvetica;
   font-weight: 100;
   margin-bottom: 200px;
@@ -63,54 +87,59 @@ div#text > p {
   padding: 0;
   margin: 0;
   margin-top: 60px;
-  font-size: 44px;
+  font-size: 22px;
   font-family: helvetica;
   font-weight: 100;
 }
 
 div#text {
-  width: 1173px;
+  width: 587px;
 }
 
 img[src="img/cross.svg"] {
-  width: 33px;
-  height: 33px;
+  width: 17px;
+  height: 17px;
   position: absolute;
-  right: 1420px;
+  right: 710px;
+}
+
+img[src="img/tesla_bar_cut.png"] {
+  width: 768px;
+  height: 50px;
 }
 
 /*NAV*/
 
 ul {
   list-style: none;
-  margin-right: 50px;
+  margin-right: 25px;
 }
 
 li {
-  font-size: 41px;
+  font-size: 21px;
   color: #94979b;
   text-align: right;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   position: relative;
 }
 
 li:not(:last-child)::after {
   position: absolute;
-  top: 100;
-  left: 92;
+  top: 50;
+  left: 67;
   content: "";
   height: 2px;
   background-color: #cfd1d0;
-  width: 168px;
+  width: 84px;
 }
 
 section#nav_section {
-  height: 1401px;
+  height: 701px;
 }
 
 li#current_li {
   color: #1d1d1b;
-  font-size: 48px;
+  font-size: 24px;
 }
 
 /*NAV*/
@@ -118,13 +147,13 @@ li#current_li {
 /*OPTIONS*/
 
 section#options {
-  width: 1042px;
-  height: 1401px;
+  width: 521px;
+  height: 701px;
   background-color: #f8f7f7;
-  border-radius: 30px;
+  border-radius: 15px;
   border-color: #cfd1d0;
   border-style: solid;
-  border-width: 1.5px;
+  border-width: 1px;
 }
 
 div#options-content {
@@ -138,32 +167,42 @@ div#verwarming, div#voorin_achterin, div#airconditioning, div#sterkte {
 div#voorin_achterin {
   display: flex;
   flex-direction: row;
+
+  -webkit-display: flex;
+  -webkit-flex-direction: row;
 }
 
 section#voorin, section#achterin {
   margin-right: 100px;
   display: flex;
   flex-direction: column;
+
+  -webkit-display: flex;
+  -webkit-flex-direction: column;
 }
 
 span#temp_voorin, span#temp_achterin, span.celcius_text {
   color: #94979b;
-  font-size: 55px;
+  font-size: 28px;
+}
+
+span.celcius_text {
+  margin-left: 10px;
 }
 
 img[src="img/arrow_up.svg"] {
-  width: 134px;
-  height: 53px;
+  width: 67px;
+  height: 27px;
 }
 
 img[src="img/arrow_down.svg"] {
-  width: 134px;
-  height: 53px;
+  width: 67px;
+  height: 27px;
 }
 
 a#top_arrow_voorin, a#top_arrow_achterin, a#bottom_arrow_voorin, a#bottom_arrow_achterin {
-  width: 134px;
-  height: 53px;
+  width: 67px;
+  height: 27px;
 }
 
 a#top_arrow_voorin:active, a#top_arrow_achterin:active, a#bottom_arrow_voorin:active, a#bottom_arrow_achterin:active {
@@ -172,8 +211,8 @@ a#top_arrow_voorin:active, a#top_arrow_achterin:active, a#bottom_arrow_voorin:ac
 }
 
 div.tempdiv {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /*toggle*/
@@ -182,8 +221,8 @@ div.tempdiv {
   .switch {
     position: relative;
     display: inline-block;
-    width: 594px;
-    height: 115px;
+    width: 297px;
+    height: 58px;
   }
 
   /* Hide default HTML checkbox */
@@ -215,27 +254,34 @@ div.tempdiv {
   #slider-text_verwarming, #slider-text_aircon {
     position: absolute;
     z-index: 1;
-    height: 115px;
-    width: 297px;
+    height: 58px;
+    width: 149px;
     background-color: #2f94d1;
     -webkit-transition: .4s;
     transition: .4s;
-    border-radius: 10px;
-    font-size: 44px;
+    border-radius: 5px;
+    font-size: 22px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
   }
 
   #slider-text-second_verwarming, #slider-text-second_aircon {
-    font-size: 44px;
+    font-size: 22px;
     color: #94979b;
-    display: flex;
     height: 100%;
     align-items: center;
+    margin-right: 64px;
+    display: flex;
     justify-content: flex-end;
-    margin-right: 127px;
+
+    -webkit-display: flex;
+    -webkit-justify-content: flex-end;
   }
 
   input:checked + .slider {
@@ -253,15 +299,15 @@ div.tempdiv {
   }*/
 
   input:checked + #slider-text_verwarming {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(297px);
+    -webkit-transform: translateX(149px);
+    -ms-transform: translateX(149px);
+    transform: translateX(149px);
   }
 
   input:checked + #slider-text_aircon {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(297px);
+    -webkit-transform: translateX(149px);
+    -ms-transform: translateX(149px);
+    transform: translateX(149px);
   }
 
   /* Rounded sliders */
@@ -279,7 +325,7 @@ div.tempdiv {
 
   input[type=range] {
   -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
-  width: 700px; /* Specific width is required for Firefox. */
+  width: 350px; /* Specific width is required for Firefox. */
   background: transparent; /* Otherwise white in Chrome */
   }
 
@@ -292,7 +338,7 @@ div.tempdiv {
   }
 
   input[type=range]::-ms-track {
-    width: 700px;
+    width: 350px;
     cursor: pointer;
 
     /* Hides the slider so custom styles can be added */
@@ -307,19 +353,19 @@ div.tempdiv {
     /* Special styling for WebKit/Blink */
     input[type=range]::-webkit-slider-thumb {
       -webkit-appearance: none;
-      height: 87px;
-      width: 124px;
+      height: 44px;
+      width: 62px;
       border-radius: 10px;
       background: #2f94d1;
       cursor: pointer;
-      margin-top: -35px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+      margin-top: -15px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
     }
 
     /* All the same stuff for Firefox */
     input[type=range]::-moz-range-thumb {
       -webkit-appearance: none;
-      height: 87px;
-      width: 124px;
+      height: 44px;
+      width: 62px;
       border-radius: 10px;
       background: #2f94d1;
       cursor: pointer;
@@ -328,8 +374,8 @@ div.tempdiv {
     /* All the same stuff for IE */
     input[type=range]::-ms-thumb {
       -webkit-appearance: none;
-      height: 87px;
-      width: 124px;
+      height: 44px;
+      width: 62px;
       border-radius: 10px;
       background: #2f94d1;
       cursor: pointer;
@@ -340,8 +386,8 @@ div.tempdiv {
   /*slider styling*/
 
     input[type=range]::-webkit-slider-runnable-track {
-    width: 700px;
-    height: 14px;
+    width: 350px;
+    height: 7px;
     cursor: pointer;
     background: #cfd1d0;
     }
@@ -351,8 +397,8 @@ div.tempdiv {
     }
 
     input[type=range]::-moz-range-track {
-      width: 700px;
-      height: 14px;
+      width: 350px;
+      height: 7px;
       cursor: pointer;
       background: #cfd1d0;
     }
@@ -360,7 +406,7 @@ div.tempdiv {
   /*slider styling*/
 
   span#slider_value {
-    font-size: 41px;
+    font-size: 21px;
     color: #94979b;
     margin-left: 30px;
   }

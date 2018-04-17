@@ -3,14 +3,14 @@ function changeSlider() {
   if (document.getElementById('slidercheck_verwarming').checked) {
     document.getElementById('slider-text_verwarming').innerHTML = 'Uit';
     document.getElementById('slider-text-second_verwarming').innerHTML = 'Aan';
-    document.getElementById('slider-text-second_verwarming').style.marginLeft = '127px';
+    document.getElementById('slider-text-second_verwarming').style.marginLeft = '64px';
     document.getElementById('slider-text-second_verwarming').style.justifyContent = "flex-start";
   }
 
   else {
     document.getElementById('slider-text_verwarming').innerHTML = 'Aan';
     document.getElementById('slider-text-second_verwarming').innerHTML = 'Uit';
-    document.getElementById('slider-text-second_verwarming').style.marginRight = '127px';
+    document.getElementById('slider-text-second_verwarming').style.marginRight = '64px';
     document.getElementById('slider-text-second_verwarming').style.justifyContent = "flex-end";
   }
 }
@@ -30,14 +30,14 @@ function changeSlider2() {
   if (document.getElementById('slidercheck_aircon').checked) {
     document.getElementById('slider-text_aircon').innerHTML = 'Uit';
     document.getElementById('slider-text-second_aircon').innerHTML = 'Aan';
-    document.getElementById('slider-text-second_aircon').style.marginLeft = '127px';
+    document.getElementById('slider-text-second_aircon').style.marginLeft = '64px';
     document.getElementById('slider-text-second_aircon').style.justifyContent = "flex-start";
   }
 
   else {
     document.getElementById('slider-text_aircon').innerHTML = 'Aan';
     document.getElementById('slider-text-second_aircon').innerHTML = 'Uit';
-    document.getElementById('slider-text-second_aircon').style.marginRight = '127px';
+    document.getElementById('slider-text-second_aircon').style.marginRight = '64px';
     document.getElementById('slider-text-second_aircon').style.justifyContent = "flex-end";
   }
 }
