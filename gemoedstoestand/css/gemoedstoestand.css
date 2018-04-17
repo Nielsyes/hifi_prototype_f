@@ -115,7 +115,7 @@ figure img {
   }
 
   .mood {
-    -webkit-display: flex;
+    display: -webkit-flex;
     display: flex;
     -webkit-align-items: flex-start;
     align-items: flex-start;
@@ -130,7 +130,7 @@ figure img {
   }
 
   .button-wrap {
-    -webkit-display: flex;
+    display: -webkit-flex;
     display: flex;
     -ms-flex-basis: 33.33%;
     -o-flex-basis: 33.33%;
