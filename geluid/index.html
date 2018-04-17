@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/geluid.css">
+    <title>geluid</title>
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="assets/tesla_bar_cut.png" alt"picture of the header menu with navigation buttons">
+        </figure>
+    </header>
+    <main>
+        <section id="pop-up">
+            <div id="top-bar">
+                <img src="assets/cross.svg">
+                <h1>Controlepaneel</h1>
+            </div> 
+            <div id="main-part">
+				<nav>
+					<ul>
+						<li><a href="belichting.html">Belichting</a></li>
+						<hr>
+						<li><a href="index.html" class="active">Geluid</a></li>
+						<hr>
+						<li><a href="geur.html">Geur</a></li>
+						<hr>
+						<li><a href="temperatuur.html">Temperatuur</a></li>
+						<hr>
+						<li><a href="zitplaats.html">Zitplaats</a></li>
+					</ul>
+                </nav>
+                <div class="container">
+                    <fieldset>
+                        <label for="sound">Geluid</label>
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="sound" checked>
+                            <label class="onoffswitch-label" for="sound">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>	
+                    </fieldset>
+                    
+                    <fieldset>
+                        <label for="volume">volume</label>
+                        <input id="range" type="range" min="1" max="100" value="72" class="slider">
+                    </fieldset>
+                    
+                    <fieldset class="vertical-range-section">
+                        <h3>Toon</h3>
+                    
+                        <div class="vertical-range-group">
+                            <label for="bass">Bass</label>
+                            <div class="vertical-range-input">
+                                <input id="bass" class="vertical-range slider" type="range" min="1" max="100" value="72" orient="vertical">
+                            </div>
+                        </div>
+                        
+                        <div class="vertical-range-group">
+                            <label for="mid">Mid</label>
+                            <div class="vertical-range-input">
+                                <input id="mid" class="vertical-range slider" type="range" min="1" max="100" value="72" orient="vertical">
+                            </div>
+                        </div>
+                        
+                        <div class="vertical-range-group">
+                            <label for="treble">Treble</label>
+                            <div class="vertical-range-input">
+                                <input id="treble" class="vertical-range slider" type="range" min="1" max="100" value="72" orient="vertical">
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <label for="frequency">Frequentie</label>
+                        <input id="frequency" type="range" min="1" max="100" value="72" class="slider">
+                    </fieldset>
+				</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+
+
+
