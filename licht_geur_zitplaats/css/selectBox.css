@@ -1,0 +1,83 @@
+.selectBox {
+	height: 100px;
+	width: 100px;
+	border-radius: 10px;
+	position: absolute;
+}
+
+.selectBox.active {
+	-webkit-box-shadow: 0px 0px 1px 5px rgba(47,147,209,1);
+	-moz-box-shadow: 0px 0px 1px 5px rgba(47,147,209,1);
+	box-shadow: 0px 0px 1px 5px rgba(47,147,209,1);
+}
+
+#b1 {
+	background-color: #80ba26;
+	margin-left: 70px;
+	margin-top: 40px;
+}
+#b2 {
+	background-color: #96d3ed;
+	margin-left: 200px;
+	margin-top: 40px;
+}
+#b3 {
+	background-color: #89c9bd;
+	margin-left: 330px;
+	margin-top: 40px;
+}
+#b4 {
+	background-color: #1f9dd9;
+	margin-left: 460px;
+	margin-top: 40px;
+}
+#b5 {
+	background-color: #61257c;
+	margin-left: 590px;
+	margin-top: 40px;
+}
+#b6 {
+	background-color: #eea0c0;
+	margin-left: 720px;
+	margin-top: 40px;
+}
+#b7 {
+	margin-left: 850px;
+	margin-top: 40px;
+	background-color: #e11479;
+}
+#b8 {
+	background-color: #e02125;
+	margin-left: 70px;
+	margin-top: 170px;
+}
+#b9 {
+	background-color: #721a1e;
+	margin-left: 200px;
+	margin-top: 170px;
+}
+#b10 {
+	background-color: #fdeb39;
+	margin-left: 330px;
+	margin-top: 170px;
+}
+#b11 {
+	background-color: #ee8322;
+	margin-left: 460px;
+	margin-top: 170px;
+}
+#b12 {
+	background-color: #51772c;
+	margin-left: 590px;
+	margin-top: 170px;
+}
+#b13 {
+	background-color: #ffffff;
+	margin-left: 720px;
+	margin-top: 170px;
+}
+#b14 {
+	margin-left: 850px;
+	margin-top: 170px;
+	background-color: #233261;
+}
