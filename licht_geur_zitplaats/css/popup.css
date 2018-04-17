@@ -39,6 +39,7 @@ div#main-part {
 }
 
 img[src="img/cross.svg"] {
+  margin-top: 20px;
   width: 33px;
   height: 33px;
   position: absolute;
