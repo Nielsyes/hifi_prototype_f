@@ -131,7 +131,7 @@ li {
 ul > a:not(:last-child)::after {
   position: absolute;
   bottom: 25;
-  left: 65;
+  left: 75;
   content: "";
   height: 2px;
   background-color: #cfd1d0;
