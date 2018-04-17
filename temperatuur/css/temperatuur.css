@@ -298,6 +298,7 @@ div.tempdiv {
 
     display: -webkit-flex;
     -webkit-justify-content: flex-end;
+    -webkit-align-items: center;
   }
 
   input:checked + .slider {
