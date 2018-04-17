@@ -56,7 +56,7 @@ figure img {
   }
   
   div#main-part {
-    height: auto;
+    height: 818px;
     background-color: #ffffff;
     border-radius:  0px 0px 12px 12px;
     display: flex;
