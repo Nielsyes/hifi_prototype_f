@@ -19,12 +19,18 @@
   }
 
   section#pop-up {
+    display: -webkit-flex;
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: flex-start;
-    align-content: flex-start;
+    -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: flex-start;
+            align-items: flex-start;
+    -webkit-align-content: flex-start;
+            align-content: flex-start;
     width: 100%;
     height: 100%;
   }
@@ -35,10 +41,14 @@
     border-style: solid;
     border-width: 0px 0px 1px;
     border-color: #cfd0cf;
+    display: -webkit-flex;
     display: flex;
-    flex-basis: 70px;
-    justify-content: center;
-    align-items: center;
+    -webkit-flex-basis: 70px;
+            flex-basis: 70px;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
     position: relative;
     width: 100%;
   }
@@ -59,12 +69,18 @@
     height: auto;
     background-color: #ffffff;
     border-radius:  0px 0px 12px 12px;
+    display: -webkit-flex;
     display: flex;
-    flex-basis: auto;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-flex-basis: auto;
+            flex-basis: auto;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-grow: 1;
+            flex-grow: 1;
+    -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+    -webkit-align-items: center;
+            align-items: center;
     width: 100%;
   }
 
@@ -109,13 +125,19 @@
 
   .button-wrap {
     display: flex;
-    flex-basis: 33.33%;
+    -ms-flex-basis: 33.33%;
+    -o-flex-basis: 33.33%;
+    -webkit-flex-basis: 33.33%;
+            flex-basis: 33.33%;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    justify-content: center;
+    -webkit-justify-content: center;
+            justify-content: center;
   }
 
   .button-label {
-    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+            flex-basis: 100%;
     font-weight: normal;
     margin-bottom: 16px;
     text-align: center;
@@ -128,7 +150,8 @@
     background-size: 42%;
     background-position: center;
     background-repeat: no-repeat;
-    flex-basis: 260px; 
+    -webkit-flex-basis: 260px;
+            flex-basis: 260px; 
     height: 170px;
   }
 
