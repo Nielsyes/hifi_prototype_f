@@ -1,5 +1,7 @@
 nav {
 	position: absolute;
+	/*added*/left: 60px;
+	bottom: 800px;/*added*/
 }
 
 li {
@@ -16,8 +18,8 @@ ul li:first-child{
 ul {
 	width: 350px;
 	text-align: right;
-	margin-right: 1070px;
-	margin-top: -1500px;
+	/*margin-right: 1070px;*/
+	/*margin-top: -1500px;*/
 }
 
 a {
@@ -37,7 +39,7 @@ a.active {
 	padding-right: 50px;
 }
 
-hr { 
+hr {
     display: block;
     margin-left: auto;
     margin-right: 0;
@@ -45,7 +47,7 @@ hr {
     border-width: 1px;
     width: 120px;
     color: #cfd0cf;
-} 
+}
 
 .container {
 	background-color: #f7f7f7;
