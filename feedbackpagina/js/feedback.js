@@ -29,3 +29,12 @@ bar.animate(1.0, {
 }, function() {
     console.log('Animation has finished');
 });  // Number from 0.0 to 1.0
+
+/*--------------------------------------------------------------------------------------------*/
+
+function redirect(){
+  setInterval(function(){
+    window.location.href = "../lgz/belichting.html";
+  }, 3000);
+}
+redirect();
