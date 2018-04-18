@@ -23,4 +23,4 @@ function redirect(){
     window.location.href = "../lgz/belichting.html";
   }, 3000);
 }
-redirect();
+//redirect();
