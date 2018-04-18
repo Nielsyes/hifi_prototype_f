@@ -1,26 +1,39 @@
+// progressbar.js@1.0.0 version is used
 // Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
 
-var bar = new ProgressBar.Line(container, {
+var bar = new ProgressBar.Circle(container, {
+  color: '#000000',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
   strokeWidth: 10,
+  trailWidth: 10,
   easing: 'easeInOut',
-  duration: 2000,
-  color: '#9DA2A0',
-  trailColor: '#eee',
-  trailWidth: 5,
-  svgStyle: {width: '100%', height: '100%', borderRadius: "10px"},
-  from: {color: '#9DA2A0'},
-  to: {color: '#3088BB'},
-  step: (state, bar) => {
-    bar.path.setAttribute('stroke', state.color);
+  //duration: 30000,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#EAEAEA', width: 5 },
+  to: { color: '#000000', width: 10 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('1&#37;');
+    } else {
+      circle.setText(value + '&#37;');
+    }
+
   }
 });
+bar.text.style.fontFamily = 'Helvetica';
+bar.text.style.fontSize = '25px';
 
-bar.animate(1.0);  // Number from 0.0 to 1.0
-
-
-function redirect(){
-  setInterval(function(){
-    window.location.href = "../lgz/belichting.html";
-  }, 3000);
-}
-//redirect();
+bar.animate(1.0, {
+    duration: 10000,
+    easing: 'linear'
+}, function() {
+    console.log('Animation has finished');
+});  // Number from 0.0 to 1.0
