@@ -67,14 +67,17 @@
     border-radius:  0px 0px 12px 12px;
     display: -webkit-flex;
     display: flex;
-    -webkit-justify-content: space-between;
-            justify-content: space-between;
+    -webkit-justify-content: space-around;
+            justify-content: space-around;
     -webkit-flex-basis: 100%;
             flex-basis: 100%;
     -webkit-flex-wrap: wrap;
             flex-wrap: wrap;
-    padding: 40px 30px;
+    /*padding: 40px 30px;*/
     width: 100%;
+
+    /*added*/
+    padding-top: 20px;
   }
 
   /* navigation */
@@ -97,9 +100,12 @@
     border-style: solid;
     -webkit-flex-basis: 60%;
             flex-basis: 60%;
-    -webkit-flex-grow: 1;
-            flex-grow: 1;
+    /*-webkit-flex-grow: 1;
+            flex-grow: 1;*/
     padding: 30px 40px;
+
+    /*added*/
+    height: 701px;
   }
 
   .container h2 {
